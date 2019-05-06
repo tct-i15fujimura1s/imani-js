@@ -14,7 +14,7 @@ class IMani {
   }
   
   get height() {
-    return this.height.height;
+    return this.canvas.height;
   }
   
   set height(height) {
