@@ -11,7 +11,7 @@ class IMani {
     return im;
   }
   
-  constructor(img = null, width = 0, height = 0) {
+  constructor(img = null, width = 1, height = 1) {
     const c = this.canvas = document.createElement("canvas");
     [c.width, c.height] = [width, height];
     this.context = c.getContext("2d");
