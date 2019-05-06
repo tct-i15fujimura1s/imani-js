@@ -15,7 +15,7 @@ class IMani {
     const c = this.canvas = document.createElement("canvas");
     [c.width, c.height] = [width, height];
     this.context = c.getContext("2d");
-    if(img != null) put(img);
+    if(img != null) this.put(img);
   }
   
   get width() {
