@@ -1,5 +1,4 @@
-export default IMani;
-class IMani {
+export default class IMani {
   constructor(width = 0, height = 0) {
     const c = this.canvas = document.createElement("canvas");
     [c.width, c.height] = [width, height];
