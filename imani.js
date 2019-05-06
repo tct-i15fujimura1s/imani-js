@@ -2,7 +2,7 @@ export default class IMani {
   constructor(width = 0, height = 0) {
     const c = this.canvas = document.createElement("canvas");
     [c.width, c.height] = [width, height];
-    this.context = c.context;
+    this.context = c.getContext("2d");
   }
   
   get width() {
@@ -40,6 +40,7 @@ export default class IMani {
     if(typeof width  === "number") this.canvas.width  = width;
     if(typeof height === "number") this.canvas.height = height;
     this.imageData = data;
+    return this;
   }
   
   extend(w, h) {
